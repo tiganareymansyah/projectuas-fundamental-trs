@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./daftarakun.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="daftarakun">
+      <div class="div-gambar">
+        <img src="../image/Screenshot (243).png" />
+      </div>
+      <div class="div-daftarakun">
+        <fieldset>
+          <h1>TiRegram</h1>
+          <p>
+            Halo, silahkan buat akun anda untuk melihat foto dan video dari
+            teman anda
+          </p>
+          <form name="daftar">
+            <input
+              type="text"
+              id="fname"
+              name="fname"
+              placeholder="Nama depan"
+              required
+              autofocus
+            />
+            <input
+              type="text"
+              id="lname"
+              name="lname"
+              placeholder="Nama belakang"
+              required
+            /><br /><br />
+            <input
+              type="text"
+              id="email"
+              name="email"
+              placeholder="Email"
+              required
+            /><br /><br />
+            <input
+              type="password"
+              id="password"
+              name="pwd"
+              placeholder="Password"
+              required
+            /><br /><br />
+            <label>Tanggal lahir :</label><br /><br />
+            <div id="div-date">
+              <select id="tanggal" name="tanggal" required>
+                <script>
+                  for (let a = 1; a <= 31; a++) {
+                    document.write("<option>" + a);
+                  }
+                </script>
+              </select>
+              <select id="bulan" name="bulan" required>
+                <script>
+                  const date = new Date();
+                  for (let a = 0; a < 12; a++) {
+                    date.setMonth(a);
+                    document.write(
+                      `<option value=${a + 1}>` +
+                        date.toLocaleDateString("id-ID", { month: "long" })
+                    );
+                  }
+                </script>
+              </select>
+              <select id="tahun" name="tahun" required>
+                <script>
+                  for (let z = 1945; z <= 2022; z++) {
+                    document.write("<option>" + z);
+                  }
+                </script></select
+              ><br /><br />
+            </div>
+            <br />
+            <label>Jenis kelamin :</label><br />
+            <input
+              type="radio"
+              id="pria"x`
+              name="jenkel"
+              value="Laki-laki"
+              required
+            />
+            <label>Laki-laki</label><br />
+            <input
+              type="radio"
+              id="wanita"
+              name="jenkel"
+              value="Perempuan"
+              required
+            />
+            <label>Perempuan</label>
+            <p>
+              Orang yang menggunakan layanan kami mungkin telah mengunggah
+              informasi kontak anda ke instagram.<a
+                href="https://www.facebook.com/help/instagram/261704639352628"
+                target="_blank"
+                style="color: blue"
+                >Pelajari Selengkapnya</a
+              >
+            </p>
+            <p>
+              Dengan mengklik daftar, berarti anda sudah menyetujui
+              <a
+                href="https://help.instagram.com/581066165581870/?locale=id_ID"
+                target="_blank"
+                style="color: blue"
+                >Ketentuan</a
+              >,
+              <a
+                href="https://www.facebook.com/privacy/policy"
+                target="_blank"
+                style="color: blue"
+                >Kebijakan Privasi</a
+              >, dan
+              <a
+                href="https://help.instagram.com/1896641480634370/"
+                target="_blank"
+                style="color: blue"
+                >Kebijakan Cookie</a
+              >
+              kami.
+            </p>
+            <br />
+            <button id="button-daftar">Daftar</button>
+          </form>
+        </fieldset>
+      </div>
+    </div>
+    <script src="./daftarakun.js"></script>
+  </body>
+</html>

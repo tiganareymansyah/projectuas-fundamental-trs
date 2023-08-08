@@ -1,0 +1,44 @@
+.chat {
+  display: flex;
+  justify-content: center;
+  padding-block: 20px;
+  flex-wrap: wrap;
+  gap: 1px;
+  height: 83vh;
+  background-color: #0002;
+}
+
+.chat-friend {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 10px;
+  border: 1px solid;
+  border-radius: 10px;
+  border-color: #0003;
+  width: 30%;
+  background-color: white;
+}
+
+.chat-friend h3 {
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.chat-column {
+  padding: 10px;
+  border: 1px solid;
+  border-radius: 10px;
+  border-color: #0003;
+  width: 50%;
+  background-color: white;
+}
+
+.chat-column h3 {
+  text-align: center;
+  padding-bottom: 39px;
+}
+
+.chat-friend p {
+  cursor: pointer;
+}

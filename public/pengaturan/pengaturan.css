@@ -1,0 +1,81 @@
+.div-update {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  padding: 7%;
+  background-color: #0002;
+  flex-wrap: wrap;
+}
+
+.updel {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.update {
+  border: 1px solid;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border-radius: 5px;
+  background-color: white;
+  border-color: white;
+}
+
+.update h2 {
+  font-family: "Curlz MT";
+  letter-spacing: 3px;
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.update input {
+  margin: 20px;
+  width: 275px;
+  height: 30px;
+  border: 0px;
+  border-bottom: 1px solid;
+}
+
+.div-update img {
+  width: 400px;
+  height: 50vh;
+}
+
+#save-akun {
+  width: 285px;
+  background-color: rgb(0, 89, 255);
+  border-color: rgb(0, 89, 255);
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+}
+
+.garis p {
+  text-align: center;
+  color: black;
+}
+
+.delete {
+  display: flex;
+  justify-content: center;
+}
+
+.delete-akun {
+  color: white;
+  cursor: pointer;
+  width: 350px;
+  padding: 4px 8px;
+  border-radius: 5px;
+  border: 1px solid white;
+  border-color: rgb(0, 89, 255);
+  background-color: rgb(0, 89, 255);
+}
+
+.delete-akun:hover {
+  border-color: black;
+  background-color: black;
+  transition: 0.5s ease-in-out;
+}

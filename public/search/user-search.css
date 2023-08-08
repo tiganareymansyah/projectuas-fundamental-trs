@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.back {
+    border: 1px solid;
+    border-color: #0003;
+    background-color: white;
+    position: sticky;
+    top: 0;
+}
+
+.back img {
+    width: 50px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.bebas {
+    background-color: #0002;
+    height: 90vh;
+}
+
+.bebas h1 {
+    text-align: center;
+    padding-block: 50px;
+}
+
+.search-cetak {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-block: 70px;
+}
+
+.search-cetak td {
+    padding: 10px;
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../beranda/beranda.css" />
+    <link rel="stylesheet" href="./pengaturan.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="beranda">
+      <div class="judul-beranda">TiRegram</div>
+      <div class="search-beranda">
+        <form action="../search/user-search.html">
+          <input type="search" name="search" id="search" placeholder="Search" />
+        </form>
+      </div>
+      <div class="navbar-beranda">
+        <img src="../image/home.png" id="home" />
+        <img src="../image/chat.png" id="chat" />
+        <img src="../image/posting.png" id="posting" />
+        <img src="../image/notification.png" id="notification" />
+        <button id="profil">
+          <img src="../image/profil.png" />
+          <div class="profil">
+            <ul>
+              <li class="set-profil">Profil</li>
+            </ul>
+            <ul>
+              <li class="set-pengaturan">Pengaturan</li>
+            </ul>
+            <ul>
+              <li class="ganti-akun">Ganti Akun</li>
+            </ul>
+          </div>
+        </button>
+      </div>
+    </div>
+    <div class="div-update">
+      <div>
+        <img src="../image/update.png" />
+      </div>
+      <div class="updel">
+        <form name="formupdate" class="update">
+          <h2>Update Akun</h2>
+          <input
+            type="text"
+            name="updatenewemail"
+            id="update-email"
+            placeholder="Masukkan email baru"
+            required
+            autofocus
+          />
+          <input
+            type="password"
+            name="updatenewpassword"
+            id="update-katasandi"
+            placeholder="Masukkan kata sandi baru"
+            required
+          />
+          <input type="submit" id="save-akun" value="Simpan" />
+        </form>
+        <div class="garis">
+          <p>-------------------- Atau --------------------</p>
+        </div>
+        <div class="delete">
+          <button class="delete-akun">Hapus Akun</button>
+        </div>
+      </div>
+    </div>
+    <script src="./pengaturan.js"></script>
+  </body>
+</html>

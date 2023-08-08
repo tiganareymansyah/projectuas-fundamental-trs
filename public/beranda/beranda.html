@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./beranda.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="beranda">
+      <div class="judul-beranda">TiRegram</div>
+      <div class="search-beranda">
+        <form action="../search/user-search.html">
+          <input type="search" name="search" id="search" placeholder="Search" />
+        </form>
+      </div>
+      <div class="navbar-beranda">
+        <img src="../image/home.png" />
+        <img src="../image/chat.png" id="chat" />
+        <img src="../image/posting.png" id="posting" />
+        <img src="../image/notification.png" id="notification" />
+        <button id="profil">
+          <img src="../image/profil.png" />
+          <div class="profil">
+            <ul>
+              <li class="set-profil">Profil</li>
+            </ul>
+            <ul>
+              <li class="set-pengaturan">Pengaturan</li>
+            </ul>
+            <ul>
+              <li class="ganti-akun">Ganti Akun</li>
+            </ul>
+          </div>
+        </button>
+      </div>
+    </div>
+    <script>
+      if (!localStorage.getItem("token")) {
+        location.href = "/login/login.html";
+      }
+    </script>
+    <div class="post-sarfoll">
+      <div class="postingan"></div>
+      <div class="saran-follow">
+        <p>Saran untuk anda</p>
+      </div>
+    </div>
+    <script src="./beranda.js"></script>
+  </body>
+</html>

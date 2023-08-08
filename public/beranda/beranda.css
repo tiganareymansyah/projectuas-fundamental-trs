@@ -1,0 +1,185 @@
+@font-face {
+  font-family: "Billabong";
+  src: url("/fonts/Billabong.ttf");
+}
+
+body {
+  font-family: sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.beranda {
+  display: flex;
+  justify-content: space-evenly;
+  border: 1px solid;
+  border-color: rgb(205, 203, 203);
+  background-color: white;
+  align-items: center;
+  padding-block: 15px;
+  gap: 10px;
+  position: sticky;
+  top: 0;
+  flex-wrap: wrap;
+}
+
+.judul-beranda {
+  font-family: Billabong, sans-serif;
+  font-size: 2rem;
+  animation-name: warna;
+  animation-duration: 7s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-delay: 2s;
+  animation-direction: alternate;
+}
+
+@keyframes warna {
+  25% {
+    color: red;
+  }
+  50% {
+    color: yellow;
+  }
+  75% {
+    color: green;
+  }
+  100% {
+    color: blue;
+  }
+}
+
+.search-beranda #search {
+  height: 30px;
+  width: 200px;
+  border: 1px solid;
+  border-radius: 10px;
+  background-color: #0002;
+  border-color: #0002;
+}
+
+.navbar-beranda > * {
+  width: 20px;
+  margin-left: 40px;
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+
+#profil {
+  position: relative;
+}
+
+.profil {
+  display: none;
+  flex-direction: column;
+  border: 1px solid;
+  border-color: rgb(207, 204, 204);
+  border-radius: 5px;
+  padding: 5px;
+  width: 100px;
+  position: absolute;
+  right: 0;
+  top: 32px;
+  background-color: #fff;
+}
+
+.profil.open {
+  display: flex;
+}
+
+.profil ul li {
+  list-style: none;
+  padding: 8px 12px;
+}
+
+.profil > ul > li:hover {
+  background-color: #0002;
+}
+
+.post-sarfoll {
+  display: flex;
+  justify-content: center;
+  background-color: #0002;
+  gap: 50px;
+}
+
+.post-box img {
+  width: 100%;
+}
+
+.LikCom {
+  display: flex;
+  gap: 15px;
+}
+
+.LikCom img {
+  width: 20px;
+  cursor: pointer;
+}
+
+.postingan {
+  width: 512px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-block: 16px;
+}
+
+.post-box {
+  border: 1px solid;
+  background-color: white;
+  border-color: white;
+  box-shadow: 0 0 8px #0005;
+  border-radius: 5px;
+}
+
+.post-box > div {
+  padding: 8px;
+}
+
+.saran-follow {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding-block: 16px;
+}
+
+.saran-follow .divsar {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.divsar h5 {
+  cursor: pointer;
+}
+
+.saran-follow p {
+  padding-bottom: 10px;
+  font-size: small;
+}
+
+.divsar {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.divsar button {
+  height: 30px;
+  width: 50px;
+  border: 0px;
+  background-color: white;
+}
+
+.divsar button:hover {
+  border: 0px;
+  background-color: #0005;
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+}

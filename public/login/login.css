@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 100vh;
+  gap: 10px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../image/joshua-woroniecki-lzh3hPtJz9c-unsplash.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.div-gambar img {
+  width: 240px;
+}
+
+.div-login {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.fieldset-login {
+  border-radius: 5px;
+  padding-top: 10%;
+  background-color: white;
+  border-color: white;
+}
+
+.form-login {
+  margin-top: 5%;
+}
+
+.form-login input {
+  margin: 20px;
+  width: 275px;
+  height: 30px;
+  border: 0px;
+  border-bottom: 1px solid;
+}
+
+#in-submit {
+  width: 285px;
+  background-color: rgb(0, 89, 255);
+  border-color: rgb(0, 89, 255);
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+}
+
+.h1-login {
+  font-family: "Curlz MT";
+  text-align: center;
+  letter-spacing: 3px;
+  animation-name: warna;
+  animation-duration: 7s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-delay: 2s;
+  animation-direction: alternate;
+}
+
+@keyframes warna {
+  25% {
+    color: red;
+  }
+  50% {
+    color: yellow;
+  }
+  75% {
+    color: green;
+  }
+  100% {
+    color: blue;
+  }
+}
+
+.div-logintocreateaccount {
+  border: 1px solid white;
+  background-color: white;
+  width: 320px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+  /* box-shadow: 10px 10px 10px rgb(150, 150, 150), 5px 5px rgb(150, 150, 150); */
+}
+
+.div-logintocreateaccount #daftar-akun {
+  text-decoration: none;
+  color: rgb(0, 89, 255);
+  padding-left: 5px;
+  cursor: pointer;
+}
+
+.div-logintocreateaccount #daftar-akun:hover {
+  color: black;
+}

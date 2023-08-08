@@ -1,0 +1,69 @@
+.post-diprofil {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  background-color: #0002;
+}
+
+.post-box img {
+  width: 100%;
+}
+
+.LikCom {
+  display: flex;
+  gap: 15px;
+}
+
+.LikCom img {
+  width: 20px;
+  cursor: pointer;
+}
+
+.postingan {
+  width: 512px;
+  gap: 20px;
+  padding-block: 16px;
+}
+
+.post-box {
+  border: 1px solid;
+  border-color: white;
+  box-shadow: 0 0 8px #0005;
+  border-radius: 5px;
+}
+
+.post-box > div {
+  padding: 8px;
+}
+
+.pp {
+  padding-block: 15px;
+}
+
+.tampil-profil
+{
+    display: flex;
+    gap: 10px;
+}
+
+.tampil-profil img
+{
+    width: 70px;
+    height: 70px;
+    border: 1px solid;
+    border-radius: 50px;
+}
+
+.tampil-profil .profilusername
+{
+    display: flex;
+    align-items: center;
+}
+
+.changepp form
+{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}

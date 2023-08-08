@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.daftarakun {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  height: 100vh;
+  gap: 10px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../image/joshua-woroniecki-lzh3hPtJz9c-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.div-gambar img {
+  width: 300px;
+  height: 98vh;
+}
+
+.div-daftarakun fieldset {
+  padding: 10px;
+  width: 350px;
+  border-radius: 5px;
+  background-color: white;
+  margin-top: 10px;
+  /* box-shadow: 10px 10px 10px rgb(10, 10, 10), 7px 7px rgb(10, 10, 10); */
+}
+
+.div-daftarakun h1 {
+  text-align: center;
+  font-family: "Curlz MT";
+  letter-spacing: 3px;
+  animation-name: warna;
+  animation-duration: 7s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-delay: 2s;
+  animation-direction: alternate;
+}
+
+@keyframes warna {
+  25% {
+    color: red;
+  }
+  50% {
+    color: yellow;
+  }
+  75% {
+    color: green;
+  }
+  100% {
+    color: blue;
+  }
+}
+
+.div-daftarakun p {
+  text-align: center;
+  margin: 10px;
+}
+
+.div-daftarakun input {
+  height: 20px;
+}
+
+.div-daftarakun #l-name {
+  margin-left: 10px;
+}
+
+.div-daftarakun #email {
+  width: 340px;
+}
+
+.div-daftarakun #password {
+  width: 340px;
+}
+
+.div-daftarakun #div-date {
+  display: flex;
+  justify-content: space-between;
+}
+
+.div-daftarakun #button-daftar {
+  background-color: chartreuse;
+  width: 30%;
+  margin-left: 35%;
+  border-color: chartreuse;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#button-daftar a {
+  text-decoration: none;
+}
